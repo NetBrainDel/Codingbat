@@ -21,15 +21,17 @@ public boolean monkeyTrouble(boolean aSmile, boolean bSmile) {
     }
 }
 ///////////////////////////////////////////////////////////////////////////////№3
-public int sumDouble(int a, int b) {
-    int sum = a + b;
-
-    if(a != b){
-        sum *=2;
+public int sumDouble(int a, int b) {               //             ответ сайта           \\
+    int sum = a + b;                               // public int sumDouble(int a, int b) {
+    if(a != b){                                    // Store the sum in a local variable
+        sum *=2;                                   // int sum = a + b;
         return sum;
-    }
-    return sum;
-}
+    }                                              // Double it if a and b are the same
+        return sum;                                // if (a == b) {
+}                                                  // sum = sum * 2;
+                                                   // }
+                                                   // return sum;
+                                                   // }
 ///////////////////////////////////////////////////////////////////////////////№4
 
 
