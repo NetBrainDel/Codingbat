@@ -23,7 +23,7 @@ public boolean monkeyTrouble(boolean aSmile, boolean bSmile) {
 ///////////////////////////////////////////////////////////////////////////////№3
 //условие//Given two int values, return their sum. Unless the two values are the same, then return double their sum\\
 //
-public int sumDouble(int a, int b) {                                          //             ответ сайта           \\
+public int sumDouble(int a, int b) {                                          //             Site solution           \\
  // Given two int values, return their sum                                    // public int sumDouble(int a, int b) {
     int sum = a + b;                                                          // Store the sum in a local variable
  // Unless the two values are the same, then return double their sum          // int sum = a + b;
