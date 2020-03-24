@@ -20,20 +20,23 @@ public boolean monkeyTrouble(boolean aSmile, boolean bSmile) {
     return false;
     }
 }
-///////////////////////////////////////////////////////////////////////////////№3
+///////////////////////////////////////////////////////////////////////////////№3??????????
 //условие//Given two int values, return their sum. Unless the two values are the same, then return double their sum\\
-//
-public int sumDouble(int a, int b) {                                          //             Site solution           \\
- // Given two int values, return their sum                                    // public int sumDouble(int a, int b) {
-    int sum = a + b;                                                          // Store the sum in a local variable
- // Unless the two values are the same, then return double their sum          // int sum = a + b;
-    if(a != b){
-     sum *=2;                                                                 // Double it if a and b are the same
-     return sum;                                                              // if (a == b) {
-    }                                                                         // sum = sum * 2;
-     return sum;                                                              // }
-    }                                                                         // return sum;
-                                                                              // }
+//??????????                                                                   //             Site solution           \\
+public int sumDouble(int a, int b) {                                           // public int sumDouble(int a, int b) {
+ // Given two int values, return their sum                                     // Store the sum in a local variable
+    int sum = a + b;                                                           // int sum = a + b;
+
+ // Unless the two values are the same, then return double their sum ??        // Double it if a and b are the same
+  //?????????????????????????????????????????????????????????????????????????????????????????????
+    if(a != b){                                                                // if (a == b) {
+  //?????????????????????????????????????????????????????????????????????????????????????????????
+     sum *=2;                                                                  // sum = sum * 2;
+     return sum;                                                               // }
+    }                                                                          // return sum;
+     return sum;                                                               // }
+    }
+
 ///////////////////////////////////////////////////////////////////////////////№4
 public int diff21(int n) {
 if(n<=21){
@@ -98,6 +101,40 @@ public String notString(String str) {
     }
 }
 ///////////////////////////////////////////////////////////////////////////////№10
+public String missingChar(String str, int n) {
+    String front = str.substring (0, n);
 
-    }
+    String back = str.substring (n+1, str.length());
+
+    return front + back;
+}
+///////////////////////////////////////////////////////////////////////////////№11
+public String frontBack(String str) {
+
+    if (str.length() <= 1)return str;
+
+    String mid = str.substring(1, str.length()-1);
+
+    return str.charAt(str.length()-1) + mid + str.charAt(0);
+}
+//////////////////////////////////////////////////////////////////////////////№12????????????????????
+    //??????????????????????????
+                                                            //           Site solution         \\
+public String front3(String str) {                          // public String front3(String str) {
+    String front;                                           // String front;
+//If the string length is less than 3\\?????????????????????????????????????????????????????????
+    if(str.length() < 3){                                   // if (str.length() >= 3) {
+//??????????????????????????????????????????????????????????????????????????????????????????????
+        front = str.substring(0, 3);                        // front = str.substring(0, 3);
+    }else{                                                  // }
+        front = str;                                        // else {
+    }                                                       // front = str;
+    return front + front + front;                           // }
+}                                                           // return front + front + front;
+                                                            // }
+
+
+////////////////////////////////////////////////////////////////////////////////№13
+
+}
 
