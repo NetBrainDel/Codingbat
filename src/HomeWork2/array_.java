@@ -47,7 +47,7 @@ public class array_ {
          e++;
          } while (e!=a);
          e = 0;
-         System.out.print("элементы массива: ");
+         System.out.print("значения массива: ");
          do {
          e++;
          System.out.print(array[e] + " ");
