@@ -132,9 +132,77 @@ public String front3(String str) {                          // public String fro
     return front + front + front;                           // }
 }                                                           // return front + front + front;
                                                             // }
-
-
 ////////////////////////////////////////////////////////////////////////////////№13
+public String backAround(String str) {
+String last = str.substring(str.length() - 1);
+
+return last + str + last;
+  }
+/////////////////////////////////////////////////////////////////////////////////№14
+public boolean or35(int n) {
+    if(n % 3 == 0 || n % 5 == 0){
+        return true;
+
+    }
+    return false;
+}
+//////////////////////////////////////////////////////////////////////////////////№15
+public String front22(String str) {
+    int take = 2;
+    if(str.length() < take){
+        take = str.length();
+    }
+    String front = str.substring(0, take);
+    return front + str + front;
+}
+//////////////////////////////////////////////////////////////////////////////////№16
+public boolean startHi(String str) {
+    if (str.length() < 2){
+        return false;
+    }
+    String into = str.substring(0, 2);
+
+    if (into.equals("hi")) {
+        return true;
+    }
+    else {
+        return false;
+    }
+
+}
+///////////////////////////////////////////////////////////////////////////////////№17
+public boolean icyHot(int temp1, int temp2) {
+    if((temp1 < 0 && temp2 > 100) || (temp1 > 0 && temp2 < 100)){
+        return true;
+    }
+    return false;
+}
+////////////////////////////////////////////////////////////////////////////////№18
+public boolean in1020(int a, int b) {
+    if(a >= 10 && a <=20 || b >=10 && b <=20){
+        return true;
+    }
+    return false;
+}
+////////////////////////////////////////////////////////////////////////////////№19
+public boolean hasTeen(int a, int b, int c) {
+    if(a >=13 && a <= 19 || b >=13 && b <= 19 || c >=13 && c <= 19){
+        return true;
+    }
+    return false;
+}
+/////////////////////////////////////////////////////////////////////////////////№20
+public boolean loneTeen(int a, int b) {
+
+    boolean a2 = (a >= 13 && a <= 19);
+    boolean b2 = (b >= 13 && b <= 19);
+
+    if((a2 && !b2) || (!a2 && b2)){
+        return true;
+    }
+    return false;
+}
+///////////////////////////////////////////////////////////////////////////////////№21
 
 }
 
