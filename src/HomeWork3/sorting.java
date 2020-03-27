@@ -42,21 +42,21 @@ public class sorting {
 //        }
 
 /////////////////////////////////////////////////////Bubble Sort\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-//        boolean arr1 = false;
-//        int min;
-//        while(!arr1) {
-//            arr1 = true;
-//            for (int i = 0; i < a-1; i++) {
-//                if (array[i] > array[i+1]) {
-//                    arr1 = false;
-//
-//                    min = array[i];
-//                    array[i] = array[i+1];
-//                    array[i+1] = min;
-//                }
-//            }
-//        }
-           System.out.print("|" + Arrays.toString(array) + "|");
+        boolean arr1 = false;
+        int min;
+        while(!arr1) {
+            arr1 = true;
+            for (int i = 0; i < a-1; i++) {
+                if (array[i] > array[i+1]) {
+                    arr1 = false;
+
+                    min = array[i];
+                    array[i] = array[i+1];
+                    array[i+1] = min;
+                }
+            }
+        }
+           System.out.println("|" + Arrays.toString(array) + "|");
 //////////////////////////////////////////////////////Shaker sort\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 //        int leftSide = 1;
 //        int rightSide = a-1;
@@ -184,7 +184,34 @@ public class sorting {
 //            System.out.println(Arrays.toString(x));
 //        }
 ////////////////////////////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        int n = a;
+
+        for ( int i = 0, m = 0; i != n; i++, n = m )
+        {
+            for ( int j = m = i + 1; j != n; j++ )
+            {
+                if ( array[j] != array[i] )
+                {
+                    if ( m != j ) array[m] = array[j];
+                    m++;
+                }
+            }
+        }
+
+
+        if ( n != a )
+        {
+            int[] b = new int[n];
+            for ( int i = 0; i < n; i++ ) b[i] = array[i];
+
+            array = b;
+        }
+        System.out.println("после удаления одинаковых значений");
+        for ( int x : array ) System.out.print("|"+x + "|" );
+        System.out.println();
     }
 }
+
+
 
 
