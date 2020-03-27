@@ -1,5 +1,6 @@
 package HomeWork3;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class sorting {
@@ -55,7 +56,7 @@ public class sorting {
 //                }
 //            }
 //        }
-//           System.out.print("|" + Arrays.toString(array) + "|");
+           System.out.print("|" + Arrays.toString(array) + "|");
 //////////////////////////////////////////////////////Shaker sort\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 //        int leftSide = 1;
 //        int rightSide = a-1;
